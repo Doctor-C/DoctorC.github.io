@@ -1,0 +1,128 @@
+<HTML>
+<HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=big5"><TITLE>來看看您的分數</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function take_pro(){ //handout the current lv prob
+  if (document.pro_choice.lv_choice[0].checked)
+    low_prob_out();
+  if (document.pro_choice.lv_choice[1].checked)
+    mid_prob_out();
+  if (document.pro_choice.lv_choice[2].checked)
+    adv_prob_out(); 
+}
+function low_prob_out() {
+  var today=new Date();
+  var sum=(today.getSeconds())%7; // get the random integer
+  //var sum=Math.round(1000*Math.random())%7; // get the random integer
+
+  if(sum==0){var file_name="low_prob0.html";}
+  else if(sum==1){var file_name="low_prob1.html";}
+  else if(sum==2){var file_name="low_prob2.html";}
+  else if(sum==3){var file_name="low_prob3.html";}
+  else if(sum==4){var file_name="low_prob4.html";}
+  else if(sum==5){var file_name="low_prob5.html";}
+  else if(sum==6){var file_name="low_prob6.html";}
+  window.open(file_name, '_top', '');
+}
+function mid_prob_out() {
+  var today=new Date();
+  var sum=(today.getSeconds())%7; // get the random integer
+
+  if(sum==0){var file_name="mid_prob0.html";}
+  else if(sum==1){var file_name="mid_prob1.html";}
+  else if(sum==2){var file_name="mid_prob2.html";}
+  else if(sum==3){var file_name="mid_prob3.html";}
+  else if(sum==4){var file_name="mid_prob4.html";}
+  else if(sum==5){var file_name="mid_prob5.html";}
+  else if(sum==6){var file_name="mid_prob6.html";}
+  window.open(file_name, '_top', '');
+}
+function adv_prob_out() {
+  var today=new Date();
+  var sum=(today.getSeconds())%7; // get the random integer
+
+  if(sum==0){var file_name="adv_prob0.html";}
+  else if(sum==1){var file_name="adv_prob1.html";}
+  else if(sum==2){var file_name="adv_prob2.html";}
+  else if(sum==3){var file_name="adv_prob3.html";}
+  else if(sum==4){var file_name="adv_prob4.html";}
+  else if(sum==5){var file_name="adv_prob5.html";}
+  else if(sum==6){var file_name="adv_prob6.html";}
+  window.open(file_name, '_top', '');
+}
+</SCRIPT>
+</HEAD>
+<STYLE>
+<!--
+	A.MENU01        {font: 9pt "細明體";
+			color: #FFFF00;}
+	A.MENU02        {font: 9pt "細明體";
+			color: #FFFFBB;
+			margin-left:12px}
+-->
+</STYLE>
+<BODY BACKGROUND="../images/bg0001.gif" BGCOLOR="#C0C0C0" LINK="#1E5666" VLINK="#172766" ALINK="#48AAB2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR VALIGN=TOP><TD WIDTH=140>
+<A HREF=../index.html><IMG SRC="../images/lg0001.gif" ALT="土木C博士" WIDTH=93 HSPACE=15 HEIGHT=105 BORDER=0></A><BR><BR><BR>
+<MAP NAME=menu01>
+   <AREA SHAPE=RECT COORDS="1,3,99,21" HREF=../intro/index.html>
+   <AREA SHAPE=RECT COORDS="1,28,99,46" HREF=../lesson.html>
+   <AREA SHAPE=RECT COORDS="1,54,121,71" HREF=../vcity.html>
+   <AREA SHAPE=RECT COORDS="1,79,103,96" HREF=../quiz/index.html>
+</MAP>
+<IMG SRC="../images/mn004.gif" WIDTH=124 HEIGHT=100 ISMAP USEMAP="#menu01" BORDER=0>
+<BR>
+</TD>
+
+<TD WIDTH=30></TD>
+<TD>
+<!--------------------------------------------------------------------------->
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD>
+<img src=score100.gif width=252 height=270 align=left>
+</TD>
+<TD>
+<ul><font size=+1 color=purple>哇！！果然是『人中之龍』！！竟然可以在『魔鬼助教』手中得到一百分！</font></ul>
+</TD>
+</TABLE>
+<BR>
+<TABLE BORDER=0 BGCOLOR="#FFFFBB" CELLPADDING=5>
+<TR><TD>
+<FONT COLOR=DRAKBLUE>
+這只不過是初級程度而已耶，難道您這樣就滿足了嗎？接下來還有中級及高級程度，不知道您敢不敢接受魔鬼助教的考驗啊！？
+</FONT>
+</TR></TD>
+</TABLE>
+<br><br>
+
+<form name=pro_choice><ul>
+<input type="radio" name="lv_choice">初級程度    <input type="radio" name="lv_choice" Checked>中級程度    <input type="radio" name="lv_choice">高級程度<br><br><br>
+<input type="button" name="pro_lv" value="開始考試" onClick="take_pro()">
+</form><br>
+<!--------------------------------------------------------------------------->
+</TD>
+<TD WIDTH=30 ROWSPAN=2></TD>
+</TR>
+
+
+<TR><TD></TD><TD></TD>
+<TD>
+<BR><IMG SRC="../images/forest.gif" WIDTH=560 HEIGHT=29><BR><BR>
+[ <A HREF=../index.html>回到首頁</A> | <A HREF=../intro/index.html>C博士簡介</A> | <A HREF=../lesson.html>C博士開講</A> | <A HREF=../vcity.html>虛擬城市探險</A>
+ | <A HREF=../quiz/index.html>線上大考驗</A> | 
+ <A HREF=low_100.html onClick="window.open('../help/help_lesson.html','','toorbar=no,location=no,status=no,width=400,height=400')">線上輔助說明</A> ]
+<HR WIDTH=560 ALIGN=LEFT>
+
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=-2>&copy; 1997 <A HREF=../about.html><I>316.2 Studio</I></A></FONT>
+</TD></TR>
+<TR><TD><IMG SRC="../images/blank.gif" WIDTH=140 HEIGHT=20 BORDER=0></TD><TD><IMG SRC="../images/blank.gif" WIDTH=30 HEIGHT=20 BORDER=0></TD><TD></TD><TD><IMG SRC="../images/blank.gif" WIDTH=30 HEIGHT=20 BORDER=0></TD></TR>
+</TABLE>
+<BR><BR><BR>
+
+
+
+<BR><BR><BR>
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,203 @@
+<HTML>
+<HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=big5"><TITLE>高級程度試題</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--本程式著作權屬316.2小組-->
+function mystatus(msg)
+{    
+   window.status=msg; 
+}
+
+
+
+
+function calculate_grade(){  
+  //----- the answer ------
+   var myans1=3;
+   var myans2=2;
+   var myans3=3;
+   var myans4=2;
+   var myans5=1;
+
+   var scores=0; 
+   var ans1=document.myform.ans_1[myans1-1].checked;
+   var ans2=document.myform.ans_2[myans2-1].checked; 
+   var ans3=document.myform.ans_3[myans3-1].checked;
+   var ans4=document.myform.ans_4[myans4-1].checked;
+   var ans5=document.myform.ans_5[myans5-1].checked;
+   
+ //Output the scores
+   if (ans1==true)
+     scores+=20;
+   if (ans2==true)
+     scores+=20;   
+   if (ans3==true)
+     scores+=20;
+   if (ans4==true)
+     scores+=20;
+   if (ans5==true)
+     scores+=20;   
+  
+ //open the grade file depend on the scores value
+   if(scores==100) var file_name="adv_100.html";
+   if(scores==80) var file_name="80.html";
+   if(scores==60) var file_name="60.html";
+   if(scores==40) var file_name="40.html";
+   if(scores==20) var file_name="20.html";
+   if(scores==0) var file_name="0.html";
+
+   window.open(file_name,'_top','');
+   answer_window=window.open('','answer_window','toolbar=no,statue=no,location=no,directories=no,menubar=no,scrollbars=yes,width=500,height=300');
+   answer_window.document.write('<html><head><title>試題答案</title>');
+   answer_window.document.write('</head>');
+   answer_window.document.write("<BODY TEXT='#000000' BGCOLOR='#FFFFC0' LINK='#008000' VLINK='#008000' ALINK='#FF0000' LKCOLOR='#408080'>");
+   answer_window.document.write("<font size=+1 color=blue><b>助教公佈答案</b></font><ol type=1>");
+   answer_window.document.write("<li><font color=green>鋼結構的應力均由什麼承受？</font><ol type=a>");
+   answer_window.document.write("   <li><font color=green>工人</font>");
+   answer_window.document.write("   <li><font color=green>工頭</font>");
+   answer_window.document.write("   <li><font color=purple><b>鋼骨</b></font>");
+   answer_window.document.write("   <li><font color=green>鋼絲</font></ol><br>");
+   answer_window.document.write("<li><font color=green>會讓一個人展開雙翅翱翔天際，蜥蜴變恐龍，又是什麼呢？</font><ol type=a>");
+   answer_window.document.write("   <li><font color=green>魔法</font>");
+   answer_window.document.write("   <li><font color=purple><b>想像力</b></font>");
+   answer_window.document.write("   <li><font color=green>不知道</font>");
+   answer_window.document.write("   <li><font color=green>你問我，我問誰</font></ol><br>");
+   answer_window.document.write("<li><font color=green>地震發生的地方稱為</font><br><ol type=a>");
+   answer_window.document.write("   <li><font color=green>震央</font>");
+   answer_window.document.write("   <li><font color=green>震度</font>");
+   answer_window.document.write("   <li><font color=purple><b>震源</b></font>");
+   answer_window.document.write("   <li><font color=green>震生</font></ol><br>");
+   answer_window.document.write("<li><font color=green>都市常見的深開挖的防護工法是哪一種﹖</font><br><ol type=a>");
+   answer_window.document.write("   <li><font color=green>明挖</font>");
+   answer_window.document.write("   <li><font color=purple><b>連續壁</b></font>");
+   answer_window.document.write("   <li><font color=green>樑柱</font>");
+   answer_window.document.write("   <li><font color=green>牆壁</font></ol>");
+   answer_window.document.write("   <font color=green>工法</font><br><br>");
+   answer_window.document.write('<li><font color=green>下列何者不是有關『地震規模』的敘述？</font><br><ol type=a>');
+   answer_window.document.write("   <li><font color=purple><b>共分為六級</b></font>");
+   answer_window.document.write("   <li><font color=green>以芮氏等級劃分</font>");
+   answer_window.document.write("   <li><font color=green>與地震能量有關</font>");
+   answer_window.document.write("   <li><font color=green>與距離無關</font><br></ol>");
+   answer_window.document.write("</ol><BR><BR>");
+   answer_window.document.write("<center><form><input type=button name='close_win' value='關閉' onClick=window.close()></form></center>");
+   answer_window.document.write("</body>");
+   answer_window.document.write("</html>");
+   answer_window.document.close();
+   window.document.close();
+}
+</SCRIPT>
+</HEAD>
+<STYLE>
+<!--
+	A.MENU01        {font: 9pt "細明體";
+			color: #FFFF00;}
+	A.MENU02        {font: 9pt "細明體";
+			color: #FFFFBB;
+			margin-left:12px}
+-->
+</STYLE>
+<BODY BACKGROUND="../images/bg0001.gif" BGCOLOR="#C0C0C0" LINK="#1E5666" VLINK="#172766" ALINK="#48AAB2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD WIDTH=140>
+<A HREF=../index.html><IMG SRC="../images/lg0001.gif" ALT="土木C博士" WIDTH=93 HSPACE=15 HEIGHT=105 BORDER=0></A></TD><TD WIDTH =30></TD><TD><IMG SRC="adv.gif" ALT="高級程度試題" WIDTH=227 HEIGHT=50></TD><TD><IMG SRC="mquiz.gif" WIDTH=77 HEIGHT= 120 BORDER=0 ALIGN=RIGHT></TD><TD WIDTH=30 ROWSPAN=4></TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD COLSPAN=2><HR></TD>
+</TR>
+
+
+<TR VALIGN=TOP>
+<TD ALIGN=LEFT>
+<MAP NAME=menu01>
+   <AREA SHAPE=RECT COORDS="1,3,99,21" HREF=../intro/index.html>
+   <AREA SHAPE=RECT COORDS="1,28,99,46" HREF=../lesson.html>
+   <AREA SHAPE=RECT COORDS="1,54,121,71" HREF=../vcity.html>
+   <AREA SHAPE=RECT COORDS="1,79,103,96" HREF=../quiz/index.html>
+</MAP>
+<IMG SRC="../images/mn004.gif" WIDTH=124 HEIGHT=100 ISMAP USEMAP="#menu01" BORDER=0>
+<BR>
+</TD>
+<TD></TD>
+<TD COLSPAN=2>
+<!--------------------------------------------------------------------------->
+<SCRIPT LANGUAGE=JavaScript>
+   <!-- 本程式著作權屬於316.2小組-->
+var time
+ 
+  for(time=1;time<20;time+=4)
+  { setTimeout("mystatus('加油!加油!')",time*1000);
+    setTimeout("mystatus(' ')",(time+1.6)*1000);
+    setTimeout("mystatus('題目要看清楚喔!!  ^_~')",(time+2)*1000);
+    setTimeout("mystatus(' ')",(time+3.6)*1000); 
+  }
+ for(time=30;time<100;time+=4)
+  { setTimeout("mystatus('時間快到囉!')",time*1000);
+    setTimeout("mystatus(' ')",(time+1.6)*1000);
+    setTimeout("mystatus('趕快交卷喔!  ^_~')",(time+2)*1000);
+    setTimeout("mystatus(' ')",(time+3.6)*1000); 
+  }
+</SCRIPT>
+
+
+<FORM NAME=myform><ol type=1>
+<li><font color=purple><b>鋼結構的應力均由什麼承受？</b></font><ul>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>工人</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>工頭</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>鋼骨</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>鋼絲</font><br></ul>
+ <BR><BR>
+<li><font color=purple><b>會讓一個人展開雙翅翱翔天際，蜥蜴變恐龍，又是什麼呢？</b></font><ul>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>魔法</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>想像力</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>不知道</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>你問我，我問誰</font></ul>
+ <BR><BR>
+<li><font color=purple><b>地震發生的地方稱為</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>震央</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>震度</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>震源</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>震生</font></ul>
+ <BR><BR>
+<li><font color=purple><b>都市常見的深開挖的防護工法是哪一種﹖</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>明挖</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>連續壁</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>樑柱</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>牆壁 </font></ul>
+    <font color=purple><b>工法</b><br>
+ <BR><BR>
+<li><font color=purple><b>下列何者不是有關『地震規模』的敘述？</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>共分為六級</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>以芮氏等級劃分</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>與地震能量有關</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>與距離無關</font></ul>
+</ol>
+ <BR><BR>
+
+<INPUT TYPE= "button" NAME="scores" VALUE="交卷" onClick="calculate_grade()">
+<INPUT TYPE= "reset" NAME="reset" VALUE="重寫">
+</Form>
+<!--------------------------------------------------------------------------->
+</TD>
+</TR>
+
+<TR><TD></TD><TD></TD>
+<TD colspan=2>
+<BR><IMG SRC="../images/forest.gif" WIDTH=560 HEIGHT=29><BR><BR>
+[ <A HREF=../index.html>回到首頁</A> | <A HREF=../intro/index.html>C博士簡介</A> | <A HREF=../lesson.html>C博士開講</A> | <A HREF=../vcity.html>虛擬城市探險</A>
+ | <A HREF=../quiz/index.html>線上大考驗</A> | 
+ <A HREF=adv_prob2.html onClick="window.open('../help/help_lesson.html','','toorbar=no,location=no,status=no,width=400,height=400')">線上輔助說明</A> ]
+<HR WIDTH=560 ALIGN=LEFT>
+
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=-2>&copy; 1997 <A HREF=../about.html><I>316.2 Studio</I></A></FONT>
+</TD></TR>
+<TR><TD><IMG SRC="../images/blank.gif" WIDTH=140 HEIGHT=20 BORDER=0></TD><TD><IMG SRC="../images/blank.gif" WIDTH=30 HEIGHT=20 BORDER=0></TD><TD COLSPAN=2></TD><TD><IMG SRC="../images/blank.gif" WIDTH=30 HEIGHT=20 BORDER=0></TD></TR>
+</TABLE>
+<BR><BR><BR>
+
+
+
+<BR><BR><BR>
+
+
+</BODY>
+</HTML>

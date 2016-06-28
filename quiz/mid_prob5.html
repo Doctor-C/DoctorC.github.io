@@ -1,0 +1,207 @@
+<HTML>
+<HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=big5"><TITLE>中級程度試題</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--本程式著作權屬316.2小組-->
+function mystatus(msg)
+{    
+   window.status=msg; 
+}
+
+
+
+function calculate_grade(){  
+  //----- the answer ------
+   var myans1=1;
+   var myans2=1;
+   var myans3=2;
+   var myans4=4;
+   var myans5=3;
+
+   var scores=0; 
+   var ans1=document.myform.ans_1[myans1-1].checked;
+   var ans2=document.myform.ans_2[myans2-1].checked; 
+   var ans3=document.myform.ans_3[myans3-1].checked;
+   var ans4=document.myform.ans_4[myans4-1].checked;
+   var ans5=document.myform.ans_5[myans5-1].checked;
+   
+ //Output the scores
+   if (ans1==true)
+     scores+=20;
+   if (ans2==true)
+     scores+=20;   
+   if (ans3==true)
+     scores+=20;
+   if (ans4==true)
+     scores+=20;
+   if (ans5==true)
+     scores+=20;   
+  
+ //open the grade file depend on the scores value
+   if(scores==100) var file_name="mid_100.html";
+   if(scores==80) var file_name="80.html";
+   if(scores==60) var file_name="60.html";
+   if(scores==40) var file_name="40.html";
+   if(scores==20) var file_name="20.html";
+   if(scores==0) var file_name="0.html";
+
+   window.open(file_name,'_top','');
+   answer_window=window.open('','answer_window','toolbar=no,statue=no,location=no,directories=no,menubar=no,scrollbars=yes,width=500,height=300');
+   answer_window.document.write('<html><head><title>試題答案</title>');
+   answer_window.document.write('</head>');
+   answer_window.document.write("<BODY TEXT='#000000' BGCOLOR='#FFFFC0' LINK='#008000' VLINK='#008000' ALINK='#FF0000' LKCOLOR='#408080'>");
+   answer_window.document.write("<font size=+1 color=blue><b>助教公佈答案</b></font><ol type=1>");
+   answer_window.document.write("<li><font color=green>藉由特殊設計裝置，將結構物與地盤隔離，以減少或消散部分地震的能量稱為</font><ol type=a>");
+   answer_window.document.write("   <li><font color=purple><b>隔震裝置</b></font>");
+   answer_window.document.write("   <li><font color=green>強震裝置</font>");
+   answer_window.document.write("   <li><font color=green>自動引爆裝制</font>");
+   answer_window.document.write("   <li><font color=green>離心裝置</font></ol><br>");
+   answer_window.document.write("<li><font color=green>土木的英文是什麼</font><ol type=a>");
+   answer_window.document.write("   <li><font color=purple><b>civil</b></font>");
+   answer_window.document.write("   <li><font color=green>construction</font>");
+   answer_window.document.write("   <li><font color=green>structure</font>");
+   answer_window.document.write("   <li><font color=green>engineer</font></ol><br>");
+   answer_window.document.write("<li><font color=green>考慮公路設計車速，是為了</font><br><ol type=a>");
+   answer_window.document.write("   <li><font color=green>才能顯示出工程師的設計能力</font>");
+   answer_window.document.write("   <li><font color=purple><b>車輛可以走得更順暢，不用一兩個路口就等一次紅燈</b></font>");
+   answer_window.document.write("   <li><font color=green>這樣可以收多一點設計費</font>");
+   answer_window.document.write("   <li><font color=green>讓大家都不瞭解紅綠燈是怎樣設計的</font></ol><br>");
+   answer_window.document.write("<li><font color=green>線上大考驗的助教是誰</font><br><ol type=a>");
+   answer_window.document.write("   <li><font color=green>亂馬</font>");
+   answer_window.document.write("   <li><font color=green>C博士</font>");
+   answer_window.document.write("   <li><font color=green>316.2</font>");
+   answer_window.document.write("   <li><font color=purple><b>小丸子</b></font></ol><br>");
+   answer_window.document.write('<li><font color=green>下列哪一個沒有出現在316.2合照內</font><br><ol type=a>');
+   answer_window.document.write("   <li><font color=green>白痴</font>");
+   answer_window.document.write("   <li><font color=green>電腦</font>");
+   answer_window.document.write("   <li><font color=purple><b>冷氣機</b></font>");
+   answer_window.document.write("   <li><font color=green>窗戶</font><br></ol>");
+   answer_window.document.write("</ol><BR><BR>");
+   answer_window.document.write("<center><form><input type=button name='close_win' value='關閉' onClick=window.close()></form></center>");
+   answer_window.document.write("</body>");
+   answer_window.document.write("</html>");
+   answer_window.document.close();
+   window.document.close();
+}
+</SCRIPT>
+</HEAD>
+<STYLE>
+<!--
+	A.MENU01        {font: 9pt "細明體";
+			color: #FFFF00;}
+	A.MENU02        {font: 9pt "細明體";
+			color: #FFFFBB;
+			margin-left:12px}
+-->
+</STYLE>
+<BODY BACKGROUND="../images/bg0001.gif" BGCOLOR="#C0C0C0" LINK="#1E5666" VLINK="#172766" ALINK="#48AAB2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD WIDTH=140>
+<A HREF=../index.html><IMG SRC="../images/lg0001.gif" ALT="土木C博士" WIDTH=93 HSPACE=15 HEIGHT=105 BORDER=0></A></TD><TD WIDTH =30></TD><TD><IMG SRC="mid.gif" ALT="中級程度試題" WIDTH=227 HEIGHT=50></TD><TD><IMG SRC="mquiz.gif" WIDTH=77 HEIGHT= 120 BORDER=0 ALIGN=RIGHT></TD><TD WIDTH=30 ROWSPAN=4></TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD COLSPAN=2><HR></TD>
+</TR>
+
+
+<TR VALIGN=TOP>
+<TD ALIGN=LEFT>
+<MAP NAME=menu01>
+   <AREA SHAPE=RECT COORDS="1,3,99,21" HREF=../intro/index.html>
+   <AREA SHAPE=RECT COORDS="1,28,99,46" HREF=../lesson.html>
+   <AREA SHAPE=RECT COORDS="1,54,121,71" HREF=../vcity.html>
+   <AREA SHAPE=RECT COORDS="1,79,103,96" HREF=../quiz/index.html>
+</MAP>
+<IMG SRC="../images/mn004.gif" WIDTH=124 HEIGHT=100 ISMAP USEMAP="#menu01" BORDER=0>
+<BR>
+</TD>
+<TD></TD>
+<TD COLSPAN=2>
+<!--------------------------------------------------------------------------->
+<SCRIPT LANGUAGE=JavaScript>
+   <!-- 本程式著作權屬於316.2小組-->
+var time
+ 
+  for(time=1;time<30;time+=4)
+  { setTimeout("mystatus('不可以偷看喔!')",time*1000);
+    setTimeout("mystatus(' ')",(time+1.6)*1000);
+    setTimeout("mystatus('小丸子助教在看喔!  ^_~')",(time+2)*1000);
+    setTimeout("mystatus(' ')",(time+3.6)*1000); 
+  }
+for(time=30;time<50;time+=4)
+  { setTimeout("mystatus('其實題目不難啦!!')",time*1000);
+    setTimeout("mystatus(' ')",(time+1.6)*1000);
+    setTimeout("mystatus('題目要看清楚喔!!  ^_~')",(time+2)*1000);
+    setTimeout("mystatus(' ')",(time+3.6)*1000); 
+  }
+
+
+ for(time=50;time<100;time+=4)
+  { setTimeout("mystatus('沒唸熟吧!!')",time*1000);
+    setTimeout("mystatus(' ')",(time+1.6)*1000);
+    setTimeout("mystatus('怎麼寫那麼慢!!!  ^_~')",(time+2)*1000);
+    setTimeout("mystatus(' ')",(time+3.6)*1000); 
+  }
+</SCRIPT>
+
+<FORM NAME=myform><ol type=1>
+<li><font color=purple><b>藉由特殊設計裝置，將結構物與地盤隔離，以減少或消散部分地震的能量稱為</b></font><ul>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>隔震裝置</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>強震裝置</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>自動引爆裝制</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>離心裝置</font><br></ul>
+ <BR><BR>
+<li><font color=purple><b>土木的英文是什麼</b></font><ul>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>civil</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>construction</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>structure</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>engineer</font></ul>
+ <BR><BR>
+<li><font color=purple><b>考慮公路設計車速，是為了</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>才能顯示出工程師的設計能力</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>車輛可以走得更順暢，不用一兩個路口就等一次紅燈</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>這樣可以收多一點設計費</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>讓大家都不瞭解紅綠燈是怎樣設計的</font></ul>
+ <BR><BR>
+<li><font color=purple><b>線上大考驗的助教是誰</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>C博士</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>亂馬</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>316.2</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>小丸子</font></ul>
+ <BR><BR>
+<li><font color=purple><b>下列哪一個沒有出現在316.2合照內</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>白痴</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>電腦</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>冷氣機</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>窗戶</font></ul>
+</ol>
+ <BR><BR>
+
+<INPUT TYPE= "button" NAME="scores" VALUE="交卷" onClick="calculate_grade()">
+<INPUT TYPE= "reset" NAME="reset" VALUE="重寫">
+</Form>
+<!--------------------------------------------------------------------------->
+</TD>
+</TR>
+
+<TR><TD></TD><TD></TD>
+<TD colspan=2>
+<BR><IMG SRC="../images/forest.gif" WIDTH=560 HEIGHT=29><BR><BR>
+[ <A HREF=../index.html>回到首頁</A> | <A HREF=../intro/index.html>C博士簡介</A> | <A HREF=../lesson.html>C博士開講</A> | <A HREF=../vcity.html>虛擬城市探險</A>
+ | <A HREF=../quiz/index.html>線上大考驗</A> | 
+ <A HREF=mid_prob5.html onClick="window.open('../help/help_lesson.html','','toorbar=no,location=no,status=no,width=400,height=400')">線上輔助說明</A> ]
+<HR WIDTH=560 ALIGN=LEFT>
+
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=-2>&copy; 1997 <A HREF=../about.html><I>316.2 Studio</I></A></FONT>
+</TD></TR>
+<TR><TD><IMG SRC="../images/blank.gif" WIDTH=140 HEIGHT=20 BORDER=0></TD><TD><IMG SRC="../images/blank.gif" WIDTH=30 HEIGHT=20 BORDER=0></TD><TD COLSPAN=2></TD><TD><IMG SRC="../images/blank.gif" WIDTH=30 HEIGHT=20 BORDER=0></TD></TR>
+</TABLE>
+<BR><BR><BR>
+
+
+
+<BR><BR><BR>
+
+
+</BODY>
+</HTML>

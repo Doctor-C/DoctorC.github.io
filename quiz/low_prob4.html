@@ -1,0 +1,209 @@
+<HTML>
+<HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=big5"><TITLE>初級程度試題</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+  <!-- 本程式著作權屬於316.2小組 -->
+  <!-- these codes belongs to 316.2 group -->
+
+
+function mystatus(msg)
+{    
+   window.status=msg; 
+}
+
+
+
+function calculate_grade(){  
+  //----- the answer ------
+   var myans1=3;
+   var myans2=1;
+   var myans3=4;
+   var myans4=3;
+   var myans5=4;
+
+   var scores=0; 
+   var ans1=document.myform.ans_1[myans1-1].checked;
+   var ans2=document.myform.ans_2[myans2-1].checked; 
+   var ans3=document.myform.ans_3[myans3-1].checked;
+   var ans4=document.myform.ans_4[myans4-1].checked;
+   var ans5=document.myform.ans_5[myans5-1].checked;
+   
+ //Output the scores
+   if (ans1==true)
+     scores+=20;
+   if (ans2==true)
+     scores+=20;   
+   if (ans3==true)
+     scores+=20;
+   if (ans4==true)
+     scores+=20;
+   if (ans5==true)
+     scores+=20;   
+  
+ //open the grade file depend on the scores value
+   if(scores==100) var file_name="low_100.html";
+   if(scores==80) var file_name="80.html";
+   if(scores==60) var file_name="60.html";
+   if(scores==40) var file_name="40.html";
+   if(scores==20) var file_name="20.html";
+   if(scores==0) var file_name="0.html";
+
+   window.open(file_name,'_top','');
+   answer_window=window.open('','answer_window','toolbar=no,statue=no,location=no,directories=no,menubar=no,scrollbars=yes,width=500,height=300');
+   answer_window.document.write('<html><head><title>試題答案</title>');
+   answer_window.document.write('</head>');
+   answer_window.document.write("<BODY TEXT='#000000' BGCOLOR='#FFFFC0' LINK='#008000' VLINK='#008000' ALINK='#FF0000' LKCOLOR='#408080'>");
+   answer_window.document.write("<font size=+1 color=blue><b>助教公佈答案</b></font><ol type=1>");
+   answer_window.document.write("<li><font color=green>『地震有紀錄, 人體無感覺』是我國震級表中的何種等級</font><ol type=a>");
+   answer_window.document.write("   <li><font color=green>強震</font>");
+   answer_window.document.write("   <li><font color=green>中震</font>");
+   answer_window.document.write("   <li><font color=purple><b>無感地震</b></font>");
+   answer_window.document.write("   <li><font color=green>張震</font></ol><br>");
+   answer_window.document.write("<li><font color=green>316.2的官邸位在虛擬城市的哪一區中</font><ol type=a>");
+   answer_window.document.write("   <li><font color=purple><b>A3</b></font>");
+   answer_window.document.write("   <li><font color=green>B1</font>");
+   answer_window.document.write("   <li><font color=green>C2</font>");
+   answer_window.document.write("   <li><font color=green>C4</font></ol><br>");
+   answer_window.document.write("<li><font color=green>什麼叫瓦斯中毒？</font><br><ol type=a>");
+   answer_window.document.write("   <li><font color=green>吃太多東西，而覺得噁心</font>");
+   answer_window.document.write("   <li><font color=green>吸太多安非他命，上癮了</font>");
+   answer_window.document.write("   <li><font color=green>喜歡看電視節目，而不想讀書</font>");
+   answer_window.document.write("   <li><font color=purple><b>吸入太多一氧化碳，與血液中的血紅素快速結合，有疲勞昏迷的情形</b></font></ol><br>");
+   answer_window.document.write("<li><font color=green>政府計畫建造下列哪種建設，以解決南北交通飽和的問題？</font><br><ol type=a>");
+   answer_window.document.write("   <li><font color=green>健康步道</font>");
+   answer_window.document.write("   <li><font color=green>台北捷運</font>");
+   answer_window.document.write("   <li><font color=purple><b>高速鐵路</b></font>");
+   answer_window.document.write("   <li><font color=green>雲霄飛車</font></ol><br>");
+   answer_window.document.write('<li><font color=green>下列哪一個領域不是土木工程涵蓋的領域？</font><br><ol type=a>');
+   answer_window.document.write("   <li><font color=green>交通工程</font>");
+   answer_window.document.write("   <li><font color=green>結構工程</font>");
+   answer_window.document.write("   <li><font color=green>耐震工程</font>");
+   answer_window.document.write("   <li><font color=purple><b>人體工程</b></font><br></ol>");
+   answer_window.document.write("</ol><BR><BR>");
+   answer_window.document.write("<center><form><input type=button name='close_win' value='關閉' onClick=window.close()></form></center>");
+   answer_window.document.write("</body>");
+   answer_window.document.write("</html>");
+   answer_window.document.close();
+   window.document.close();
+}
+</SCRIPT>
+</HEAD>
+<STYLE>
+<!--
+	A.MENU01        {font: 9pt "細明體";
+			color: #FFFF00;}
+	A.MENU02        {font: 9pt "細明體";
+			color: #FFFFBB;
+			margin-left:12px}
+-->
+</STYLE>
+<BODY BACKGROUND="../images/bg0001.gif" BGCOLOR="#C0C0C0" LINK="#1E5666" VLINK="#172766" ALINK="#48AAB2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD WIDTH=140>
+<A HREF=../index.html><IMG SRC="../images/lg0001.gif" ALT="土木C博士" WIDTH=93 HSPACE=15 HEIGHT=105 BORDER=0></A></TD><TD WIDTH =30></TD><TD><IMG SRC="low.gif" ALT="初級程度試題" WIDTH=227 HEIGHT=50></TD><TD><IMG SRC="mquiz.gif" WIDTH=77 HEIGHT= 120 BORDER=0 ALIGN=RIGHT></TD><TD WIDTH=30 ROWSPAN=4></TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD COLSPAN=2><HR></TD>
+</TR>
+
+
+<TR VALIGN=TOP>
+<TD ALIGN=LEFT>
+<MAP NAME=menu01>
+   <AREA SHAPE=RECT COORDS="1,3,99,21" HREF=../intro/index.html>
+   <AREA SHAPE=RECT COORDS="1,28,99,46" HREF=../lesson.html>
+   <AREA SHAPE=RECT COORDS="1,54,121,71" HREF=../vcity.html>
+   <AREA SHAPE=RECT COORDS="1,79,103,96" HREF=../quiz/index.html>
+</MAP>
+<IMG SRC="../images/mn004.gif" WIDTH=124 HEIGHT=100 ISMAP USEMAP="#menu01" BORDER=0>
+<BR>
+</TD>
+<TD></TD>
+<TD COLSPAN=2>
+<!--------------------------------------------------------------------------->
+<SCRIPT LANGUAGE=JavaScript>
+   <!-- 本程式著作權屬於316.2小組-->
+  for(time=1;time<10;time+=4)
+  { setTimeout("mystatus('加油喔!')",time*1000);
+    setTimeout("mystatus(' ')",(time+1.6)*1000);
+    setTimeout("mystatus('好好表現喔!  ^_~')",(time+2)*1000);
+    setTimeout("mystatus(' ')",(time+3.6)*1000); 
+  }
+ for(time=11;time<30;time+=4)
+  { setTimeout("mystatus('不要作弊喔!')",time*1000);
+    setTimeout("mystatus(' ')",(time+1.6)*1000);
+    setTimeout("mystatus('助教在看喔!  ^_~')",(time+2)*1000);
+    setTimeout("mystatus(' ')",(time+3.6)*1000); 
+  }
+
+  for(time=31;time<100;time+=4)
+  { setTimeout("mystatus('快喔!...快喔!')",time*1000);
+    setTimeout("mystatus(' ')",(time+1.6)*1000);
+    setTimeout("mystatus('要交卷囉!! ..... ^_~')",(time+2)*1000);
+    setTimeout("mystatus(' ')",(time+3.6)*1000); 
+  }
+</SCRIPT>
+
+
+
+<FORM NAME=myform><ol type=1>
+<li><font color=purple><b>『地震有紀錄, 人體無感覺』是我國震級表中的何種等級</b></font><ul>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>強震</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>中震</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>無感地震</font><br>
+   <INPUT TYPE= "radio" NAME="ans_1"><font color=green>張震</font><br></ul>
+ <BR><BR>
+<li><font color=purple><b>316.2的官邸位在虛擬城市的哪一區中</b></font><ul>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>A3</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>B1</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>C2</font><br>
+   <INPUT TYPE= "radio" NAME="ans_2"><font color=green>C4</font></ul>
+ <BR><BR>
+<li><font color=purple><b>什麼叫瓦斯中毒？</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>吃太多東西，而覺得噁心</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>吸太多安非他命，上癮了</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>喜歡看電視節目，而不想讀書</font><br>
+   <INPUT TYPE= "radio" NAME="ans_3"><font color=green>吸入太多一氧化碳，與血液中的血紅素快速結合，有疲勞昏迷的情形</font></ul>
+ <BR><BR>
+<li><font color=purple><b>政府計畫建造下列哪種建設，以解決南北交通飽和的問題？</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>健康步道</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>台北捷運</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>高速鐵路</font><br>
+   <INPUT TYPE= "radio" NAME="ans_4"><font color=green>雲霄飛車</font></ul>
+ <BR><BR>
+<li><font color=purple><b>下列哪一個領域不是土木工程涵蓋的領域？</b></font><br><ul>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>交通工程</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>結構工程</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>耐震工程</font><br>
+   <INPUT TYPE= "radio" NAME="ans_5"><font color=green>人體工程</font></ul>
+</ol>
+ <BR><BR>
+
+<INPUT TYPE= "button" NAME="scores" VALUE="交卷" onClick="calculate_grade()">
+<INPUT TYPE= "reset" NAME="reset" VALUE="重寫">
+</Form>
+<!--------------------------------------------------------------------------->
+</TD>
+</TR>
+
+<TR><TD></TD><TD></TD>
+<TD colspan=2>
+<BR><IMG SRC="../images/forest.gif" WIDTH=560 HEIGHT=29><BR><BR>
+[ <A HREF=../index.html>回到首頁</A> | <A HREF=../intro/index.html>C博士簡介</A> | <A HREF=../lesson.html>C博士開講</A> | <A HREF=../vcity.html>虛擬城市探險</A>
+ | <A HREF=../quiz/index.html>線上大考驗</A> | 
+ <A HREF=low_prob4.html onClick="window.open('../help/help_lesson.html','','toorbar=no,location=no,status=no,width=400,height=400')">線上輔助說明</A> ]
+<HR WIDTH=560 ALIGN=LEFT>
+
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=-2>&copy; 1997 <A HREF=../about.html><I>316.2 Studio</I></A></FONT>
+</TD></TR>
+<TR><TD><IMG SRC="../images/blank.gif" WIDTH=140 HEIGHT=20 BORDER=0></TD><TD><IMG SRC="../images/blank.gif" WIDTH=30 HEIGHT=20 BORDER=0></TD><TD COLSPAN=2></TD><TD><IMG SRC="../images/blank.gif" WIDTH=30 HEIGHT=20 BORDER=0></TD></TR>
+</TABLE>
+<BR><BR><BR>
+
+
+
+<BR><BR><BR>
+
+
+</BODY>
+</HTML>
